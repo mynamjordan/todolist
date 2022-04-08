@@ -22,7 +22,7 @@
         localStorage.setItem(name, isCompleted)
     }
 
-    function renderTasks(){
+    function renderTasks() {
         for (let i=0; i < localStorage.length; i++){
             let taskName = localStorage.key(i);
             let isCompleted = localStorage.getItem(taskName) == "true"
@@ -65,7 +65,7 @@
         let taskNameElement = targetElement.querySelector(".task-name");
         let taskName = taskNameElement.innerHTML
 
-        saveTask(taskName, checkbox.checkbox);
+        saveTask(taskName, checkbox.checked);
 
     }
     
