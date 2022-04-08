@@ -2,7 +2,9 @@
     let addTaskButton = document.getElementById("add-task");
     let newTaskInput = document.getElementById("task-input");
     let todoListContainer = document.getElementById("todo-list");
-    let showActiveButton = document.getElementById("show-active")
+    let showActiveButton = document.getElementById("show-active");
+    let showAllButton = document.getElementById("show-all");
+
     
     
     
@@ -55,10 +57,20 @@
                 }
             }
         }
+
+    function showAllTasks(){
+        let tasks = document.getElementsByClassName("task")
+        for (let i=0; i < tasks.length; i++){
+                tasks[i].style.display = "block"
+             }
+            }
+        
     
+        
     
     /* Step 3 make the event trigger our functions
     -----------------------------------------------*/ 
     addTaskButton.addEventListener('click', onAddTaskClicked);
     todoListContainer.addEventListener('click', onTodolistClicked);
     showActiveButton.addEventListener('click', showActiveTasks);
+    showAllButton.addEventListener('click', showAllTasks);
