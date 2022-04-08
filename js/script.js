@@ -56,8 +56,6 @@
         }
     
         let checkbox = targetElement.querySelector(".checkbox");
-    
-    
         
         if (checkbox.checked) {
             targetElement.classList.add("completed");
