@@ -1,10 +1,10 @@
 // Step 1: Find element
-let addTaskButton = document.getElementById("add-task")
-let newTaskInput = document.getElementById("task-input")
-let todoListContainer = document.getElementById("todo-list")
+let addTaskButton = document.getElementById("add-task");
+let newTaskInput = document.getElementById("task-input");
+let todoListContainer = document.getElementById("todo-list");
 
-let templateElement = document.getElementById("list-item-template")
-let template = templateElement.innerHTML
+let templateElement = document.getElementById("list-item-template");
+let template = templateElement.innerHTML;
 
 
 // Step 2: Write funtion to implement the behavior
@@ -20,4 +20,4 @@ function onAddTaskClicked(event){
 
 
 // Step 3: Link elements, function and event
-addTaskButton.addEventListener('click', onAddTaskClicked)
+addTaskButton.addEventListener('click', onAddTaskClicked);
