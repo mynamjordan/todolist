@@ -22,6 +22,10 @@
         localStorage.setItem(name, isCompleted)
     }
 
+    function renderTasks(){
+        
+    }
+
     function onAddTaskClicked(event) {
         let taskName = newTaskInput.value;
         newTaskInput.value = "";
