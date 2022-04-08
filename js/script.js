@@ -16,4 +16,4 @@ function onAddTaskClicked(event){
 
 
 // Step 3: Link elements, function and event
-addTaskButton.addEventListener('click', onAddTaskClicked);
+addTaskButton.addEventListener('click', onAddTaskClicked)
