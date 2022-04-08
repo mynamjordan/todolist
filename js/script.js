@@ -5,6 +5,7 @@
     let showActiveButton = document.getElementById("show-active");
     let showAllButton = document.getElementById("show-all");
 
+
     
     
     
@@ -17,12 +18,18 @@
     
     /* Step 2. Lets write the function to handle the 'click' event
     ---------------------------------------------------------------*/
+    function saveTask(name, isCompleted){
+        localStorage.setItem(name, isCompleted)
+    }
+
     function onAddTaskClicked(event) {
         let taskName = newTaskInput.value;
         newTaskInput.value = "";
         let taskHTML = template.replace("<!-- TASK_NAME -->", taskName);
     
         todoListContainer.insertAdjacentHTML('beforeend', taskHTML);
+
+        saveTask(taskName, false)
     }
     
     
